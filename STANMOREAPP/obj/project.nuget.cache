@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "g17ON5g98mSTVx+461mTAWzAgrj7srvxTkRbtRT6a5HL2dLdAcQ77seUolWutaT2kB+F8IaJmba89JbxYUYudw==",
+  "dgSpecHash": "IdjgW3D5ZSoaFt+2UYXzyAAjMZELYpZE8a0wamqXWyN7xvcYj6bd9ABjXQdhFg4+D3Ah7cPWRW41QOlIMlsIzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Maximillian\\Downloads\\STANMOREAPP-20211203T230828Z-001\\STANMOREAPP\\STANMOREAPP\\STANMOREAPP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maximillian\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Maximillian\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Maximillian\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Maximillian\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\Maximillian\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\Maximillian\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []

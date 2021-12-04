@@ -12,9 +12,7 @@
             <Label FontSize="36" TextColor="#717171" Text="Engineering contributes to a modern society in many ways," FontAttributes="Bold" Padding="100,10"></Label>
             <Label FontSize="36" TextColor="#717171" Text="in addition to every type of industry, engineering is essential for the production of medicine, chemicals, food and music among others." Padding="100,10"></Label>
             <Label FontSize="36" TextColor="#717171" Text="Stanmore students study a mixture of electrical, electronic and mechanical engineering along with mathematics and communication skills and have gone on to study many types of engineering at university and to undertake apprenticeships with major UK employers such as BT and TFL." Padding="100,10"></Label>
-
-            <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="AliceBlue" Text="Business" Clicked="ToBuss_Clicked"></Button>
-
+            
             <Frame BackgroundColor="#ffff" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand" HasShadow="True">
                 <Button Text="Home" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
             </Frame>
