@@ -1,0 +1,54 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Maximillian\\Downloads\\STANMOREAPP-20211203T230828Z-001\\STANMOREAPP\\STANMOREAPP.Android\\STANMOREAPP.Android.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Maximillian\\Downloads\\STANMOREAPP-20211203T230828Z-001\\STANMOREAPP\\STANMOREAPP.Android\\STANMOREAPP.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Maximillian\\Downloads\\STANMOREAPP-20211203T230828Z-001\\STANMOREAPP\\STANMOREAPP.Android\\STANMOREAPP.Android.csproj",
+        "projectName": "STANMOREAPP.Android",
+        "projectPath": "C:\\Users\\Maximillian\\Downloads\\STANMOREAPP-20211203T230828Z-001\\STANMOREAPP\\STANMOREAPP.Android\\STANMOREAPP.Android.csproj",
+        "packagesPath": "C:\\Users\\Maximillian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maximillian\\Downloads\\STANMOREAPP-20211203T230828Z-001\\STANMOREAPP\\STANMOREAPP.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Maximillian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid11.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid11.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid11.0": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2012, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

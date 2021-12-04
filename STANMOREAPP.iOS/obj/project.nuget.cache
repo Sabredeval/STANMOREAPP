@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "QRwatss/Z3uFHfiv1XCyCpOOcVoVnywTAxeHMYMWyRBP7Yi1jDhEm3F8TDw+vhtMYNybywZFlb8CGC97M9oVBg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Maximillian\\Downloads\\STANMOREAPP-20211203T230828Z-001\\STANMOREAPP\\STANMOREAPP.iOS\\STANMOREAPP.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Maximillian\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Maximillian\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\Maximillian\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

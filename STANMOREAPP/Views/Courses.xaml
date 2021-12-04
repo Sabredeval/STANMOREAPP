@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="STANMOREAPP.Views.Courses"
+             BackgroundColor="#D5D5D5">
+
+    <StackLayout>
+        <Frame BackgroundColor="#ffff">
+            <Image Source="logo"></Image>
+        </Frame>
+
+        <ScrollView HeightRequest="3000">
+
+
+            <StackLayout>
+                
+                <Image Source="eng" HeightRequest="360" Margin="0,36,0,0">
+
+                </Image>
+                <StackLayout BackgroundColor="#1B7AB9" HorizontalOptions="Center" WidthRequest="360" Margin="0,0,0,36">
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="AliceBlue" Text="Engineering" Clicked="ToEng_Clicked"></Button>
+                </StackLayout>
+                <Image Source="buss" HeightRequest="360">
+
+                </Image>
+                <StackLayout BackgroundColor="#1B7AB9" HorizontalOptions="Center" WidthRequest="360" Margin="0,0,0,36">
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="AliceBlue" Text="Business" Clicked="ToBuss_Clicked"></Button>
+                </StackLayout>
+                <Image Source="acc" HeightRequest="360">
+
+                </Image>
+                <StackLayout BackgroundColor="#1B7AB9" HorizontalOptions="Center" WidthRequest="360" Margin="0,0,0,36">
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="AliceBlue" Text="Accounting" Clicked="ToAcc_Clicked"></Button>
+                </StackLayout>
+                <Image Source="it" HeightRequest="360">
+
+                </Image>
+                <StackLayout BackgroundColor="#1B7AB9" HorizontalOptions="Center" WidthRequest="360" Margin="0,0,0,36">
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="AliceBlue" Text="IT" Clicked="ToIt_Clicked"></Button>
+                </StackLayout>
+            </StackLayout>
+
+        </ScrollView>
+        
+        
+        
+        <Frame BackgroundColor="#ffff" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand" BorderColor="#717171" HasShadow="True">
+            <Button Text="Home" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
+        </Frame>
+        
+    </StackLayout>
+    
+</ContentPage>
