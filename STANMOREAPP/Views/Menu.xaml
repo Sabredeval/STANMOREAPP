@@ -9,28 +9,47 @@
                 <Image Source="logo"></Image>
             </Frame>
 
-            <Grid VerticalOptions="EndAndExpand" MinimumHeightRequest="360">
+            <Grid VerticalOptions="EndAndExpand"  BackgroundColor="#ffffff" >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout BackgroundColor="AliceBlue" Grid.Row="0" Grid.Column="0">
+                        <Button TextTransform="None" HeightRequest="60" VerticalOptions="Fill" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Text="Timetable" Clicked="ToTimetable_Clicked"></Button>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="AliceBlue" Grid.Row="0" Grid.Column="1">
+                        <Button TextTransform="None" HeightRequest="60" VerticalOptions="Fill" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Grid.Row="5" Grid.Column="1" Text="Log Out" Clicked="ToLogin_Clicked"></Button>
+                    </StackLayout>
+                    
+                </Grid>
+                <StackLayout BackgroundColor="AliceBlue" Grid.Row="0" Grid.Column="0">
+                    <Button TextTransform="None" HeightRequest="60" VerticalOptions="Fill" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Text="About Us" Clicked="ToAbout_Clicked"></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="AliceBlue" Grid.Row="1" Grid.Column="0">
+                    <Button TextTransform="None" HeightRequest="60" VerticalOptions="Fill" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Text="Our Courses" Clicked="ToCourses_Clicked" ></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="AliceBlue" Grid.Row="2" Grid.Column="0">
+                    <Button TextTransform="None" HeightRequest="60" VerticalOptions="Fill" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Text="Contact Us" Clicked="ToContact_Clicked"></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="AliceBlue" Grid.Row="3" Grid.Column="0">
+                    <Button TextTransform="None" HeightRequest="60" VerticalOptions="Fill" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Text="Cafeteria" Clicked="ToCafeteria_Clicked"></Button>
+                </StackLayout>
+
             </Grid>
 
-            
-            <Button TextTransform="None" HeightRequest="60" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Grid.Row="0" Grid.Column="0" Text="About Us" Clicked="ToAbout_Clicked"></Button>
-            <Button TextTransform="None" HeightRequest="60" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Grid.Row="1" Grid.Column="0" Text="Our Courses" Clicked="ToCourses_Clicked" ></Button>
-            <Button TextTransform="None" HeightRequest="60" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Grid.Row="2" Grid.Column="0" Text="Contact Us" Clicked="ToCourses_Clicked"></Button>
-            <Button TextTransform="None" HeightRequest="60" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Grid.Row="3" Grid.Column="0" Text="Cafeteria" Clicked="ToCafeteria_Clicked"></Button>
-            <Button TextTransform="None" HeightRequest="60" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Grid.Row="5" Grid.Column="0" Text="Timetable" Clicked="ToTimetable_Clicked"></Button>
-            <Button TextTransform="None" HeightRequest="60" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" FontSize="20" Grid.Row="5" Grid.Column="1" Text="Log Out" Clicked="ToLogin_Clicked"></Button>
 
         </StackLayout>
     </ContentPage.Content>

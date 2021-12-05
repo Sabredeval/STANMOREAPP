@@ -4,18 +4,36 @@
              x:Class="STANMOREAPP.Views.acc"
              BackgroundColor="AliceBlue">
     <ContentPage.Content>
-        <StackLayout>
-            <Frame BackgroundColor="#ffff" >
-                <Image Source="logo"></Image>
-            </Frame>
-            <ScrollView HeightRequest="1600"></ScrollView>
-            <Label FontSize="36" TextColor="#717171" Text="Engineering contributes to a modern society in many ways," FontAttributes="Bold" Padding="100,10"></Label>
-            <Label FontSize="36" TextColor="#717171" Text="in addition to every type of industry, engineering is essential for the production of medicine, chemicals, food and music among others." Padding="100,10"></Label>
-            <Label FontSize="36" TextColor="#717171" Text="Stanmore students study a mixture of electrical, electronic and mechanical engineering along with mathematics and communication skills and have gone on to study many types of engineering at university and to undertake apprenticeships with major UK employers such as BT and TFL." Padding="100,10"></Label>
-            
-            <Frame BackgroundColor="#ffff" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand" HasShadow="True">
-                <Button Text="Home" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
-            </Frame>
-        </StackLayout>
+
+        <ScrollView HeightRequest="1600">
+            <StackLayout>
+                <Frame BackgroundColor="#ffff" >
+                    <Image Source="logo"></Image>
+                </Frame>
+                <Label FontSize="28" TextColor="#717171" Text="An Accounting and Finance study programme consists of:" FontAttributes="Bold" Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="• vocational route (level 2, level " Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="• tutorial " Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="• accounting and finance-related" Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="• enrichment" Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="• work experience in a relevant" Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="• institution e.g. audit and" Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="• consultancy firms, etc" Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="• preparation for application to the next level and further education" Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="• an option subject" Padding="150,10"></Label>
+                <Button Text="Apply on our site" FontFamily="Segui UI" FontSize="20" TextColor="#fff" BackgroundColor="#1B7AB9" HorizontalOptions="Center" VerticalOptions="Fill" HeightRequest="50" WidthRequest="300" Margin="0,50,0,0" CornerRadius="15" TextTransform="None" Clicked="GoToCourses"/>
+                <Grid  HeightRequest="100" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Home" Grid.Row="0" Grid.Column="0" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
+                    <Button Text="Courses" Grid.Row="0" Grid.Column="1" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToCourses_Clicked"></Button>
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

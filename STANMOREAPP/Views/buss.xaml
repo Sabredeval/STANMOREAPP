@@ -1,12 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="STANMOREAPP.Views.buss">
+             x:Class="STANMOREAPP.Views.buss"
+             BackgroundColor="AliceBlue">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+        <ScrollView HeightRequest="1600">
+            <StackLayout>
+                <Frame BackgroundColor="#ffff" >
+                    <Image Source="logo"></Image>
+                </Frame>
+                <Label FontSize="28" TextColor="#717171" Text="This subject is a very popular choice. Its appeal is partly related to its real-life relevance and future career prospects." FontAttributes="Bold" Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="Stanmore students have had considerable examination success over many years. 
+Many students studying Business Studies either go on to university to study for degrees in Business Studies, Accountancy and Financial Management or other related subjects. Students starting a career straight after completing their examinations seek employment in the business world, particularly banking, finance, insurance, law, management and the civil service. 
+" Padding="150,10"></Label>
+                <Label FontSize="28" TextColor="#717171" Text="At Stanmore, our students also have an opportunity to start their own profit-making company with our help getting invaluable experience while studying. 
+Our priority is not only to ensure that you achieve your qualifications but also that our students can perform effectively 
+" Padding="150,10"></Label>
+                <Button Text="Apply on our site" FontFamily="Segui UI" FontSize="20" TextColor="#fff" BackgroundColor="#1B7AB9" HorizontalOptions="Center" VerticalOptions="Fill" HeightRequest="50" WidthRequest="300" Margin="0,50,0,0" CornerRadius="15" TextTransform="None" Clicked="GoToCourses"/>
+                <Grid  HeightRequest="100" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Home" Grid.Row="0" Grid.Column="0" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
+                    <Button Text="Courses" Grid.Row="0" Grid.Column="1" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToCourses_Clicked"></Button>
+                </Grid>
+            </StackLayout>
+        </ScrollView> 
     </ContentPage.Content>
 </ContentPage>

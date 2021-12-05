@@ -1,16 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="STANMOREAPP.Views.Contact">
+             x:Class="STANMOREAPP.Views.Contact"
+             BackgroundColor="AliceBlue">
     <ContentPage.Content>
         <StackLayout>
             <Frame BackgroundColor="#ffff" >
                 <Image Source="logo"></Image>
             </Frame>
 
-            <Image Source="Group8"></Image>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0" Text="Depart."></Label>
+                <Label TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="1" Text="Email"></Label>
+                <Label TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="2" Text="Phone"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0" Text="Gneral Enquiries"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1" Text="enquiries@stanmore.ac.uk"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="2" Text="020 0420 7700"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0" Text="Admissions"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="1" Text="admissions@stanmore.ac.uk"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="2" Text="020 0420 7700"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="0" Text="Marketing"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="1" Text="merketing@stanmore.ac.uk"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="2" Text="020 0420 7700"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="4" Grid.Column="0" Text="Absence notification"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="4" Grid.Column="1" Text=""></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="4" Grid.Column="2" Text="020 0420 7701"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="5" Grid.Column="0" Text="Safeguarding"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="5" Grid.Column="1" Text=""></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="5" Grid.Column="2" Text="07521 486 594"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="6" Grid.Column="0" Text="Counseling Team"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="6" Grid.Column="1" Text=""></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="6" Grid.Column="2" Text="020 0420 7766"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="7" Grid.Column="0" Text="First Aid"></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="7" Grid.Column="1" Text=""></Label>
+                <Label TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="7" Grid.Column="2" Text="07851 177 561"></Label>
+            </Grid>
             
-            <Frame BackgroundColor="#ffff" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand" BorderColor="#717171" HasShadow="True">
+            <Frame BackgroundColor="#ffff" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
                 <Button Text="Home" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
             </Frame>
 
