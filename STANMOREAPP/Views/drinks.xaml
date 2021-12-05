@@ -1,12 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="STANMOREAPP.Views.drinks">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="STANMOREAPP.Views.drinks"
+             BackgroundColor="AliceBlue">
+    <StackLayout>
+        <Frame BackgroundColor="#ffff">
+            <Image Source="logo"></Image>
+        </Frame>
+        <ScrollView HeightRequest="3000">
+            <StackLayout>
+                <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
+                    <Image Source="cola" Margin="0,15,0,0"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Cola"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£1"/>
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
+                    <Image Source="tea" Margin="0,15,0,0"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Tea"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£1"/>
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
+                    <Image Source="orange" Margin="0,15,0,0"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Orange Juice"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£1"/>
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
+                    <Image Source="wat" Margin="0,15,0,0"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Glass of Water"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£0.25"/>
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
+                    <Image Source="coffee" Margin="0,15,0,0"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Coffee"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£1.50"/>
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                </StackLayout>
+                <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
+                    <Image Source="foods" Margin="0,15,0,0"/>
+                    <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Want to also have a dish?" Margin="0,10"/>
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Go to foods"  Clicked="ToFoods_Clicked"></Button>
+                </StackLayout>
+            </StackLayout>
+         </ScrollView>
+        <Grid  HeightRequest="300" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="Home" Grid.Row="0" Grid.Column="0" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
+            <Button Text="Cafeteria" Grid.Row="0" Grid.Column="1" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToCafeteria_Clicked"></Button>
+        </Grid>
+    </StackLayout>
 </ContentPage>

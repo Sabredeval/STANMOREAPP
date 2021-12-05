@@ -22,7 +22,7 @@ namespace STANMOREAPP.Views
         }
         public async void ToFoods_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new drinks()));
+            await Navigation.PushModalAsync(new NavigationPage(new foods()));
         }
         public async void ToDrinks_Clicked(object sender, EventArgs e)
         {
