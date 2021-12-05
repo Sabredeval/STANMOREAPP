@@ -1,15 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="STANMOREAPP.Views.About">
+             x:Class="STANMOREAPP.Views.About"
+             BackgroundColor="AliceBlue">
     <ContentPage.Content>
-        <Frame BackgroundColor="#ffff" >
-            <Image Source="logo"></Image>
-        </Frame>
+        <ScrollView HeightRequest="1600">
+            <StackLayout>
+                <Frame BackgroundColor="#ffff" >
+                    <Image Source="logo"></Image>
+                </Frame>
 
-        <Frame BackgroundColor="#ffff" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
-            <Button Text="Home" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
-        </Frame>
+                <Label FontSize="20" Padding="100, 20, 100, 0" TextColor="Black" Text="Stanmore College was established in 1987. The College offers its students a wealth of provision, an excellent experience and top-class teaching from highly skilled staff. Based in Stanmore, Greater London, the College offers education to both young and adult learners. "></Label>
+
+                <StackLayout>
+                    <Label Margin="0,20,0,0" HorizontalTextAlignment="Center" FontAttributes="bold" FontSize="20" TextColor="Black"  Text="Key Staff"></Label>
+                    <Image Source="sarbdipnoonan" HeightRequest="460"/>
+                    <Label Margin="0,0,0,20" HorizontalTextAlignment="Center" FontSize="20" TextColor="Black"  Text="Principle: Sarbdip Noonan"></Label>
+                </StackLayout>
+
+                <Label FontSize="20" Padding="100, 0" TextColor="Black" Text="It provides a range of vocational as well as academic provision. The College has grown within the sector by developing its higher education provision. Bespoke training is available to businesses and the College is also involved with apprenticeships."></Label>
+
+                <Image Source="logo" Margin="0, 40"></Image>
+
+                <Label FontSize="20" Padding="100, 0, 100, 20" TextColor="Black" Text="Our focus at the College is to provide excellence in teaching and learning and an environment where all students can achieve their potential. In particular, we are committed to developing a love of learning and inspiring all learners to accomplish their personal goals whether it be university level study, career development or a new personal "></Label>
+
+
+
+                <Frame BackgroundColor="#ffff" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
+                    <Button Text="Home" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
 
     </ContentPage.Content>
 </ContentPage>
