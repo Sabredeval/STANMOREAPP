@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Plugin.MediaManager/1.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/MediaManager.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/MediaManager.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -9,6 +18,24 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.CommunityToolkit/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2125"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {}
+        },
+        "build": {
+          "build/Xamarin.CommunityToolkit.targets": {}
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -28,7 +55,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2196": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -153,6 +180,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Plugin.MediaManager/1.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/MediaManager.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/MediaManager.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -160,6 +196,24 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.CommunityToolkit/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2125"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {}
+        },
+        "build": {
+          "build/Xamarin.CommunityToolkit.targets": {}
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -179,7 +233,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2196": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -304,6 +358,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Plugin.MediaManager/1.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/MediaManager.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/MediaManager.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -311,6 +374,24 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.CommunityToolkit/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2125"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {}
+        },
+        "build": {
+          "build/Xamarin.CommunityToolkit.targets": {}
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -330,7 +411,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2196": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -455,6 +536,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Plugin.MediaManager/1.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/MediaManager.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/MediaManager.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -462,6 +552,24 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.CommunityToolkit/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2125"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {}
+        },
+        "build": {
+          "build/Xamarin.CommunityToolkit.targets": {}
         }
       },
       "Xamarin.Essentials/1.7.0": {
@@ -481,7 +589,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2196": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -607,6 +715,49 @@
     }
   },
   "libraries": {
+    "Plugin.MediaManager/1.0.9": {
+      "sha512": "XWjkq5kru+pxE/EBZue7d5i4S6zOJ/zqTCY1QkwVmY+13fDcJ5LARAN6en4oc7MGyWmVWkFaIG0SmoTpXKt5tg==",
+      "type": "package",
+      "path": "plugin.mediamanager/1.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/monoandroid10.0/MediaManager.dll",
+        "lib/monoandroid10.0/MediaManager.pdb",
+        "lib/monoandroid10.0/MediaManager.xml",
+        "lib/net472/MediaManager.dll",
+        "lib/net472/MediaManager.pdb",
+        "lib/net472/MediaManager.xml",
+        "lib/netcoreapp3.1/MediaManager.dll",
+        "lib/netcoreapp3.1/MediaManager.pdb",
+        "lib/netcoreapp3.1/MediaManager.xml",
+        "lib/netstandard2.0/MediaManager.dll",
+        "lib/netstandard2.0/MediaManager.pdb",
+        "lib/netstandard2.0/MediaManager.xml",
+        "lib/tizen40/MediaManager.dll",
+        "lib/tizen40/MediaManager.pdb",
+        "lib/tizen40/MediaManager.xml",
+        "lib/uap10.0.17763/MediaManager.dll",
+        "lib/uap10.0.17763/MediaManager.pdb",
+        "lib/uap10.0.17763/MediaManager.pri",
+        "lib/uap10.0.17763/MediaManager.xml",
+        "lib/uap10.0.17763/MediaManager/MediaManager.xr.xml",
+        "lib/xamarinios10/MediaManager.dll",
+        "lib/xamarinios10/MediaManager.pdb",
+        "lib/xamarinios10/MediaManager.xml",
+        "lib/xamarinmac20/MediaManager.dll",
+        "lib/xamarinmac20/MediaManager.pdb",
+        "lib/xamarinmac20/MediaManager.xml",
+        "lib/xamarintvos10/MediaManager.dll",
+        "lib/xamarintvos10/MediaManager.pdb",
+        "lib/xamarintvos10/MediaManager.xml",
+        "plugin.mediamanager.1.0.9.nupkg.sha512",
+        "plugin.mediamanager.nuspec",
+        "readme.txt"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -654,6 +805,48 @@
         "version.txt"
       ]
     },
+    "Xamarin.CommunityToolkit/1.3.1": {
+      "sha512": "xuOzxPQ965GcQLcSEJl9jOLjhJLZNhoP2fVlSTyI+9zf/RySoVxhsnzpksAQDmaGIbWIgyNxfhtf0cs8rPvL/Q==",
+      "type": "package",
+      "path": "xamarin.communitytoolkit/1.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/PreserveXamarinCommunityToolkit.cs",
+        "build/Xamarin.CommunityToolkit.targets",
+        "icon.png",
+        "lib/monoandroid10.0/Xamarin.CommunityToolkit.dll",
+        "lib/monoandroid10.0/Xamarin.CommunityToolkit.xml",
+        "lib/net471/Xamarin.CommunityToolkit.dll",
+        "lib/net471/Xamarin.CommunityToolkit.xml",
+        "lib/net472/Xamarin.CommunityToolkit.dll",
+        "lib/net472/Xamarin.CommunityToolkit.xml",
+        "lib/netcoreapp3.1/Xamarin.CommunityToolkit.dll",
+        "lib/netcoreapp3.1/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard2.1/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard2.1/Xamarin.CommunityToolkit.xml",
+        "lib/tizen40/Xamarin.CommunityToolkit.dll",
+        "lib/tizen40/Xamarin.CommunityToolkit.xml",
+        "lib/uap10.0.19041/Xamarin.CommunityToolkit.dll",
+        "lib/uap10.0.19041/Xamarin.CommunityToolkit.pri",
+        "lib/uap10.0.19041/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinios10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinios10/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinmac20/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinmac20/Xamarin.CommunityToolkit.xml",
+        "lib/xamarintvos10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarintvos10/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinwatchos10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinwatchos10/Xamarin.CommunityToolkit.xml",
+        "xamarin.communitytoolkit.1.3.1.nupkg.sha512",
+        "xamarin.communitytoolkit.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.7.0": {
       "sha512": "xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
       "type": "package",
@@ -696,10 +889,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.2012": {
-      "sha512": "Rqc6xvWR/sf+Db5+qRCFmuYTWVp04QWRfwPto2/JHbShSy4Ed53Q2jpoFzsoloXkJA6saD236PlaWAhT6vI4gw==",
+    "Xamarin.Forms/5.0.0.2196": {
+      "sha512": "zSXDiZukojtEBmZKUUG1yYBwlB9tI8JLPkc6n+Sm1PAX01QyzErWE9AaFJgP7usyoGHn92l4HnQF7A+/MPI6VA==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.2012",
+      "path": "xamarin.forms/5.0.0.2196",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -908,15 +1101,17 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.2012.nupkg.sha512",
+        "xamarin.forms.5.0.0.2196.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "Plugin.MediaManager >= 1.0.9",
+      "Xamarin.CommunityToolkit >= 1.3.1",
       "Xamarin.Essentials >= 1.7.0",
-      "Xamarin.Forms >= 5.0.0.2012"
+      "Xamarin.Forms >= 5.0.0.2196"
     ]
   },
   "packageFolders": {
@@ -957,13 +1152,21 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Plugin.MediaManager": {
+            "target": "Package",
+            "version": "[1.0.9, )"
+          },
+          "Xamarin.CommunityToolkit": {
+            "target": "Package",
+            "version": "[1.3.1, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.2012, )"
+            "version": "[5.0.0.2196, )"
           }
         }
       }

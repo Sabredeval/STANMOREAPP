@@ -24,5 +24,6 @@ namespace STANMOREAPP.Views
         {
             await Navigation.PushModalAsync(new NavigationPage(new Menu()));
         }
+
     }
 }

@@ -8,7 +8,6 @@
             <Frame BackgroundColor="#ffff" >
                 <Image Source="logo"></Image>
             </Frame>
-
             <Grid VerticalOptions="FillAndExpand" BackgroundColor="White">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>

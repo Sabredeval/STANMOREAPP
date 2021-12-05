@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="STANMOREAPP.Views.foods"
+             BackgroundColor="AliceBlue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#ffff">
+                <Image Source="logo"></Image>
+            </Frame>
+            <ScrollView HeightRequest="3000">
+                <StackLayout>
+                    <StackLayout BackgroundColor="#1B7AB9" HorizontalOptions="Center" WidthRequest="360" Margin="0,0,0,36">
+                        <Image Source="eng" HeightRequest="360" Margin="0,36,0,0"/>
+                        <Label/>
+                        <Label/>
+                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Engineering" ></Button>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <Frame BackgroundColor="#ffff" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
+                <Button Text="Home" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

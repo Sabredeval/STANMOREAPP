@@ -73,3 +73,6 @@ C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STAN
 C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STANMOREAPP\bin\Debug\netstandard2.0\ref\STANMOREAPP.dll
 C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STANMOREAPP\bin\Debug\netstandard2.0\STANMOREAPP.pdb
 C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STANMOREAPP\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STANMOREAPP\obj\Debug\netstandard2.0\Views\basket.xaml.g.cs
+C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STANMOREAPP\obj\Debug\netstandard2.0\Views\drinks.xaml.g.cs
+C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STANMOREAPP\obj\Debug\netstandard2.0\Views\foods.xaml.g.cs

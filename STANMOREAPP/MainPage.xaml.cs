@@ -12,6 +12,7 @@ namespace STANMOREAPP
     {
         public MainPage()
         {
+            Device.SetFlags(new string[] { "MediaElement_Experimental" });
             InitializeComponent();
         }
         public async void ToLogin_Clicked(object sender, EventArgs e)

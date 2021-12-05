@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "LUsYDEdlpgJh2nZhACZOGYlBs9/5OfOCwflldf+fzt3X+p/eulkoCBp6LjPv7qwbHAsEStUctsISdSxnXpnIqg==",
+  "dgSpecHash": "DZ2icyFo+tChQZueggaYLihia0dNt8nkQw65pgOlp3ZXDZ6Q2MWZRvj7qMJ53EiZG8TZ4DscQgY0Uh+WqWdddw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Maximillian\\Downloads\\STANMOREAPP-20211203T230828Z-001\\STANMOREAPP\\STANMOREAPP.iOS\\STANMOREAPP.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Maximillian\\.nuget\\packages\\plugin.mediamanager\\1.0.9\\plugin.mediamanager.1.0.9.nupkg.sha512",
     "C:\\Users\\Maximillian\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Maximillian\\.nuget\\packages\\xamarin.communitytoolkit\\1.3.1\\xamarin.communitytoolkit.1.3.1.nupkg.sha512",
     "C:\\Users\\Maximillian\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\Maximillian\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\Maximillian\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }
