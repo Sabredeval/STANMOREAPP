@@ -20,7 +20,8 @@
                 <Label FontSize="28" TextColor="#717171" Text="• consultancy firms, etc" Padding="150,10"></Label>
                 <Label FontSize="28" TextColor="#717171" Text="• preparation for application to the next level and further education" Padding="150,10"></Label>
                 <Label FontSize="28" TextColor="#717171" Text="• an option subject" Padding="150,10"></Label>
-                <Button Text="Apply on our site" FontFamily="Segui UI" FontSize="20" TextColor="#fff" BackgroundColor="#1B7AB9" HorizontalOptions="Center" VerticalOptions="Fill" HeightRequest="50" WidthRequest="300" Margin="0,50,0,0" CornerRadius="15" TextTransform="None" Clicked="GoToCourses"/>
+                <Button Text="Apply on our site" FontFamily="Segui UI" FontSize="20" TextColor="#fff" BackgroundColor="#1B7AB9" HorizontalOptions="Center" VerticalOptions="Fill"
+                        HeightRequest="50" WidthRequest="300" Margin="0,50,0,0" CornerRadius="15" TextTransform="None" Clicked="GoToCourses"/>
                 <Grid  HeightRequest="100" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -29,8 +30,10 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Text="Home" Grid.Row="0" Grid.Column="0" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
-                    <Button Text="Courses" Grid.Row="0" Grid.Column="1" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToCourses_Clicked"></Button>
+                    <Button Text="Home" Grid.Row="0" Grid.Column="0" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" 
+                            HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
+                    <Button Text="Courses" Grid.Row="0" Grid.Column="1" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff"
+                            HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToCourses_Clicked"></Button>
                 </Grid>
 
             </StackLayout>

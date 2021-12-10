@@ -1,17 +1,371 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="STANMOREAPP.Views.Timetable">
+             x:Class="STANMOREAPP.Views.Timetable"
+             BackgroundColor="AliceBlue">
     <ContentPage.Content>
-        <StackLayout>
-            <Frame BackgroundColor="#ffff" >
-                <Image Source="logo"></Image>
-            </Frame>
+        <ScrollView HeightRequest="4000">
+            <StackLayout>
+                <Frame BackgroundColor="#ffff">
+                    <Image Source="logo"></Image>
+                </Frame>
 
-            <Frame BackgroundColor="#ffff" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand" BorderColor="#717171" HasShadow="True">
-                <Button Text="Home" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
-            </Frame>
+                <Grid HeightRequest="1000">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="13*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label BackgroundColor="#fff" Grid.Row="1" Grid.ColumnSpan="5" Text="Monday" TextColor="#717171" FontSize="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        <Button Grid.Row="0" Grid.Column="0" Text="Mon" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="#fff" TextColor="#717171"/>
+                        <Button Grid.Row="0" Grid.Column="1" Text="Tue" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="#fff" TextColor="#717171" />
+                        <Button Grid.Row="0" Grid.Column="2" Text="Wed" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="#fff" TextColor="#717171" />
+                        <Button Grid.Row="0" Grid.Column="3" Text="Thu" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="#fff" TextColor="#717171" />
+                        <Button Grid.Row="0" Grid.Column="4" Text="Fri" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="#fff" TextColor="#717171" />
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 24" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. Bent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="09:00-10:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 40" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. El" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="11:00-12:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Elm 20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. Bent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="13:00-15:00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 40" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. El" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="15:00-15:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
 
-        </StackLayout>
+                <Grid HeightRequest="1000">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="13*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label BackgroundColor="#fff" Grid.Column="0" Text="Tuesday" TextColor="#717171" FontSize="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/> 
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="GCSE English" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Oak 02" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="C. Sanderson" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="09:00-10:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. El" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="11:00-12:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Elm 65" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. Bent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="13:00-15:00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 34" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. El" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="15:00-15:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+                <Grid HeightRequest="1000">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="13*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label BackgroundColor="#fff" Grid.Column="0" Text="Wednesday" TextColor="#717171" FontSize="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="GCSE English" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Oak 02" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="C. Sanderson" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="09:00-10:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. El" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="11:00-12:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Elm 65" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. Bent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="13:00-15:00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 34" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. El" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="15:00-15:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 48" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="S. Aghari" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="15:45-17:00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+                <Grid HeightRequest="1000">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="13*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label BackgroundColor="#fff" Grid.Column="0" Text="Thursday" TextColor="#717171" FontSize="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="GCSE English" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Oak 02" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="C. Sanderson" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="09:00-10:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="S. Aghari" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="11:00-12:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Elm 24" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="S. Aghari" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="13:00-15:00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 34" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. El" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="15:00-15:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 48" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="S. Aghari" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="15:45-17:00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+                <Grid HeightRequest="1000">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="13*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label BackgroundColor="#fff" Grid.Column="0" Text="Friday" TextColor="#717171" FontSize="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="GCSE Maths" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 128" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. Cosombo" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="09:00-10:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="S. Aghari" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="11:00-12:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Elm 65" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="S. Aghari" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="13:00-15:00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="IT Y2 LVL3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="Willow 34" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="J. El" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="15:00-15:30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="0"  BackgroundColor="#fff">
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="28" FontAttributes="Italic" TextColor="#717171"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="1"  BackgroundColor="#fff">
+                            <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="32" FontAttributes="Bold" TextColor="#717171"/>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+
+                <Frame BackgroundColor="#ffff" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
+                    <Button Text="Home" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

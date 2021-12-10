@@ -10211,12 +10211,13 @@ public final class R {
     public static final int pizza=0x7f0700cb;
     public static final int potato=0x7f0700cc;
     public static final int preference_list_divider_material=0x7f0700cd;
-    public static final int sarbdipnoonan=0x7f0700ce;
-    public static final int tea=0x7f0700cf;
-    public static final int test_custom_background=0x7f0700d0;
-    public static final int tooltip_frame_dark=0x7f0700d1;
-    public static final int tooltip_frame_light=0x7f0700d2;
-    public static final int wat=0x7f0700d3;
+    public static final int s=0x7f0700ce;
+    public static final int sarbdipnoonan=0x7f0700cf;
+    public static final int tea=0x7f0700d0;
+    public static final int test_custom_background=0x7f0700d1;
+    public static final int tooltip_frame_dark=0x7f0700d2;
+    public static final int tooltip_frame_light=0x7f0700d3;
+    public static final int wat=0x7f0700d4;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

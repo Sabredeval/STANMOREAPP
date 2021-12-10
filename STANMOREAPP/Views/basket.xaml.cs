@@ -16,5 +16,9 @@ namespace STANMOREAPP.Views
         {
             InitializeComponent();
         }
+        public async void ToMenu_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new Menu()));
+        }
     }
 }

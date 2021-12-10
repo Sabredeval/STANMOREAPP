@@ -9,9 +9,11 @@
             <Image Source="logo"></Image>
         </Frame>
 
-        <Button Text="Login" TextTransform="None" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" HorizontalOptions="Center" WidthRequest="250" FontSize="20" Margin="0, 370, 0, 35"  Clicked="ToLogin_Clicked">
+        <Button Text="Login" TextTransform="None" FontFamily="Segoe UI" BackgroundColor="#ffff" 
+                TextColor="#717171" HorizontalOptions="Center" WidthRequest="250" FontSize="20" Margin="0, 370, 0, 35"  Clicked="ToLogin_Clicked">
         </Button>
-        <Button Text="Register" TextTransform="None" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" HorizontalOptions="Center" WidthRequest="250" FontSize="20"  Clicked="ToRegister_Clicked"/>
+        <Button Text="Register" TextTransform="None" FontFamily="Segoe UI" BackgroundColor="#ffff" 
+                TextColor="#717171" HorizontalOptions="Center" WidthRequest="250" FontSize="20"  Clicked="ToRegister_Clicked"/>
 
     </StackLayout>
 

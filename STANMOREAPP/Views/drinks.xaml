@@ -13,13 +13,13 @@
                     <Image Source="cola" Margin="0,15,0,0"/>
                     <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Cola"/>
                     <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£1"/>
-                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket"></Button>
                 </StackLayout>
                 <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
                     <Image Source="tea" Margin="0,15,0,0"/>
                     <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Tea"/>
                     <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£1"/>
-                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                    <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket"></Button>
                 </StackLayout>
                 <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
                     <Image Source="orange" Margin="0,15,0,0"/>
@@ -46,7 +46,7 @@
                 </StackLayout>
             </StackLayout>
          </ScrollView>
-        <Grid  HeightRequest="300" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
+        <Grid  HeightRequest="150" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>

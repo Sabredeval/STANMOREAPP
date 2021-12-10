@@ -8,14 +8,20 @@
             <Image Source="logo"></Image>
         </Frame>
 
-        <Entry Placeholder="Fullname..." PlaceholderColor="#717171" BackgroundColor="White" WidthRequest="250" HorizontalOptions="Center" Margin="0,200,0,0" ></Entry>
-        <Entry Placeholder="email..." PlaceholderColor="#717171" BackgroundColor="White" WidthRequest="250" HorizontalOptions="Center" Margin="0,20,0,0" ></Entry>
-        <Entry Placeholder="Password..." PlaceholderColor="#717171" BackgroundColor="White" WidthRequest="250" HorizontalOptions="Center" Margin="0,20,0,0" ></Entry>
-        <Entry Placeholder="Repeat Password..." PlaceholderColor="#717171" BackgroundColor="White" WidthRequest="250" HorizontalOptions="Center" Margin="0,20,0,100"></Entry>
+        <Entry Placeholder="Fullname..." TextColor="Black" PlaceholderColor="#717171" 
+               BackgroundColor="White" WidthRequest="250" HorizontalOptions="Center" Margin="0,200,0,0" ></Entry>
+        <Entry Placeholder="email..." TextColor="Black" PlaceholderColor="#717171" 
+               BackgroundColor="White" WidthRequest="250" HorizontalOptions="Center" Margin="0,20,0,0" ></Entry>
+        <Entry Placeholder="Password..." TextColor="Black" IsPassword="True" 
+               PlaceholderColor="#717171" BackgroundColor="White" WidthRequest="250" HorizontalOptions="Center" Margin="0,20,0,0" ></Entry>
+        <Entry Placeholder="Repeat Password..." TextColor="Black" IsPassword="True" 
+               PlaceholderColor="#717171" BackgroundColor="White" WidthRequest="250" HorizontalOptions="Center" Margin="0,20,0,100"></Entry>
 
-        <Button Text="Submit" TextTransform="None" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" HorizontalOptions="Center" WidthRequest="250" FontSize="20" Margin="0, 0, 0, 35" Clicked="ToLogin_Clicked"/>
+        <Button Text="Submit" TextTransform="None" FontFamily="Segoe UI" BackgroundColor="#ffff" 
+                TextColor="#717171" HorizontalOptions="Center" WidthRequest="250" FontSize="20" Margin="0, 0, 0, 35" Clicked="ToLogin_Clicked"/>
 
-        <Button Text="Back" TextTransform="None" FontFamily="Segoe UI" BackgroundColor="#ffff" TextColor="#717171" HorizontalOptions="Center" WidthRequest="250" FontSize="20" Clicked="ToMain_Clicked"/>
+        <Button Text="Back" TextTransform="None" FontFamily="Segoe UI" BackgroundColor="#ffff" 
+                TextColor="#717171" HorizontalOptions="Center" WidthRequest="250" FontSize="20" Clicked="ToMain_Clicked"/>
 
     </StackLayout>
-</ContentPage>
+</ContentPage> 

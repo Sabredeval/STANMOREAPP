@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="STANMOREAPP.Views.DetailsPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Name:" FontSize="Medium" HorizontalOptions="FillAndExpand" />
+                <Label Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Age:" FontSize="Medium" HorizontalOptions="FillAndExpand" />
+                <Label Text="{Binding Price}" FontSize="Medium" FontAttributes="Bold" />
+            </StackLayout>
+            <Button x:Name="dismissButton" Text="Dismiss" Clicked="OnDismissButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

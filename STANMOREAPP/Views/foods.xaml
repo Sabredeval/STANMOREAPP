@@ -14,50 +14,51 @@
                         <Image Source="burg" Margin="0,15,0,0"/>
                         <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Burger"/>
                         <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£1"/>
-                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket"></Button>
                     </StackLayout>
                     <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
                         <Image Source="cook" Margin="0,15,0,0"/>
                         <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Cookies"/>
                         <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£0.5"/>
-                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket"></Button>
                     </StackLayout>
                     <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
                         <Image Source="croi" Margin="0,15,0,0"/>
                         <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Croissant"/>
                         <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£1"/>
-                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket"></Button>
                     </StackLayout>
                     <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
                         <Image Source="pizza" Margin="0,15,0,0"/>
                         <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Pizza"/>
                         <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£2"/>
-                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket"></Button>
                     </StackLayout>
                     <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
                         <Image Source="potato" Margin="0,15,0,0"/>
                         <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Fries"/>
                         <Label HorizontalTextAlignment="Center" FontSize="16" TextColor="Black" Text="£1"/>
-                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket" ></Button>
+                        <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Add to the basket"></Button>
                     </StackLayout>
                     <StackLayout BackgroundColor="#fff" HorizontalOptions="Center" WidthRequest="360" Margin="0,15,0,36">
                         <Image Source="drk" Margin="0,15,0,0"/>
                         <Label HorizontalTextAlignment="Center" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="Want to also have a drink?" Margin="0,10"/>
                         <Button BackgroundColor="#1B7AB9" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="#ffff" Text="Go to drinks"  Clicked="ToDrinks_Clicked"></Button>
                     </StackLayout>
+                    <Grid  HeightRequest="180" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Text="Home" Grid.Row="0" Grid.Column="0" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
+                        <Button Text="Cafeteria" Grid.Row="0" Grid.Column="1" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToCafeteria_Clicked"></Button>
+                    </Grid>
                 </StackLayout>
             </ScrollView>
-            <Grid  HeightRequest="300" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Button Text="Home" Grid.Row="0" Grid.Column="0" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToMenu_Clicked"></Button>
-                <Button Text="Cafeteria" Grid.Row="0" Grid.Column="1" FontFamily="Segui UI" FontSize="20" TextColor="Black" BackgroundColor="#ffff" HorizontalOptions="Fill" VerticalOptions="Fill" Clicked="ToCafeteria_Clicked"></Button>
-            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

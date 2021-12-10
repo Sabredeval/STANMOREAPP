@@ -1350,3 +1350,4 @@ C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STAN
 C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STANMOREAPP.Android\obj\Debug\110\android\src\crc64515ee83f00766c60\VisualFeedbackEffectRouter_FastRendererOnLayoutChangeListener.java
 C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STANMOREAPP.Android\obj\Debug\110\android\src\crc645b8ccbad6ecd7dce\SideMenuViewRenderer.java
 C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STANMOREAPP.Android\obj\Debug\110\res\raw\stanmore_reel.mp4
+C:\Users\Maximillian\Downloads\STANMOREAPP-20211203T230828Z-001\STANMOREAPP\STANMOREAPP.Android\obj\Debug\110\res\drawable\s.jpg
